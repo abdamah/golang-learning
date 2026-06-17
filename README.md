@@ -14,6 +14,7 @@ Each lesson lives in its own folder with example code, exercises, and a solution
 Each lesson folder contains:
 
 - `main.go` — lesson example
+- `lessonNN.md` — explanation (read this first)
 - `exerciseNN.md` — exercises
 - `solutionNN.go` — solution (run separately)
 
@@ -24,15 +25,12 @@ go mod init github.com/abdamah/golang-learning  # already done
 go run ./lesson01
 ```
 
-## Exercises
+## How to study each lesson
 
-```bash
-# 1. Read the exercises
-cat lesson04/exercise04.md
-
-# 2. Try on your own, then check the solution
-go run ./lesson04/solution04.go
-```
+1. Read `lessonNN.md` (explanation and definitions)
+2. Read and run `main.go`
+3. Try `exerciseNN.md` without looking at solutions
+4. Check `solutionNN.go` if stuck
 
 > Solution files use `//go:build ignore` so `go run ./lesson04` still runs only `main.go`.
 
